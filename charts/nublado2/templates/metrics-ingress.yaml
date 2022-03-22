@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: {{ template "nublado2.fullname" . }}-metrics-anonymous
+spec:
+  rules:
+  - hosts: {values.ingress.hosts}
+    http:
+      paths:
+      - backend:
+          service:
+            name: proxy-public
+            port:
+              name: http
+        path: /nb/hub/metrics
+        pathType: ImplementationSpecific
