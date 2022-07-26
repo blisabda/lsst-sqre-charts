@@ -1,6 +1,6 @@
 # kafdrop
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 3.x](https://img.shields.io/badge/AppVersion-3.x-informational?style=flat-square)
+![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 3.x](https://img.shields.io/badge/AppVersion-3.x-informational?style=flat-square)
 
 A Helm chart for Kafdrop
 
@@ -20,7 +20,7 @@ A Helm chart for Kafdrop
 | host | string | `nil` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"obsidiandynamics/kafdrop"` |  |
-| image.tag | string | `"3.29.0"` |  |
+| image.tag | string | `"3.30.0"` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.enabled | bool | `false` |  |
 | ingress.hosts | list | `[]` |  |
