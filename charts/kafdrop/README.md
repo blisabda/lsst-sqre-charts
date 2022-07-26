@@ -1,6 +1,6 @@
 # kafdrop
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 3.x](https://img.shields.io/badge/AppVersion-3.x-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 3.x](https://img.shields.io/badge/AppVersion-3.x-informational?style=flat-square)
 
 A Helm chart for Kafdrop
 
@@ -12,44 +12,46 @@ A Helm chart for Kafdrop
 
 ## Values
 
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| affinity | object | `{}` |  |
-| cmdArgs | string | `""` |  |
-| fullnameOverride | string | `""` |  |
-| host | string | `nil` |  |
-| image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"obsidiandynamics/kafdrop"` |  |
-| image.tag | string | `"3.30.0"` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hosts | list | `[]` |  |
-| ingress.path | string | `"/"` |  |
-| ingress.tls | list | `[]` |  |
-| jmx.port | int | `8686` |  |
-| jvm.opts | string | `""` |  |
-| kafka.brokerConnect | string | `"localhost:9092"` |  |
-| kafka.keystore | string | `""` |  |
-| kafka.keystoreFile | string | `"kafka.keystore.jks"` |  |
-| kafka.properties | string | `""` |  |
-| kafka.propertiesFile | string | `"kafka.properties"` |  |
-| kafka.truststore | string | `""` |  |
-| kafka.truststoreFile | string | `"kafka.truststore.jks"` |  |
-| mountProtoDesc.enabled | bool | `false` |  |
-| mountProtoDesc.hostPath | string | `nil` |  |
-| nameOverride | string | `""` |  |
-| nodeSelector | object | `{}` |  |
-| podAnnotations | object | `{}` |  |
-| replicaCount | int | `1` |  |
-| resources.requests.cpu | string | `"1m"` |  |
-| resources.requests.memory | string | `"128Mi"` |  |
-| server.port | int | `9000` |  |
-| server.servlet.contextPath | string | `"/"` |  |
-| service.annotations | object | `{}` |  |
-| service.nodePort | int | `30900` |  |
-| service.port | int | `9000` |  |
-| service.type | string | `"NodePort"` |  |
-| tolerations | list | `[]` |  |
+| Key                        | Type   | Default                      | Description |
+|----------------------------|--------|------------------------------|-------------|
+| affinity                   | object | `{}`                         |  |
+| cmdArgs                    | string | `""`                         |  |
+| fullnameOverride           | string | `""`                         |  |
+| host                       | string | `nil`                        |  |
+| image.pullPolicy           | string | `"IfNotPresent"`             |  |
+| image.repository           | string | `"obsidiandynamics/kafdrop"` |  |
+| image.tag                  | string | `"3.30.0"`                   |  |
+| ingress.annotations        | object | `{}`                         |  |
+| ingress.ingressClassName   | string | `""`                         |  |
+| ingress.enabled            | bool   | `false`                      |  |
+| ingress.hosts              | list   | `[]`                         |  |
+| ingress.path               | string | `"/"`                        |  |
+| ingress.pathType           | string | `"Prefix"`                   |  |
+| ingress.tls                | list   | `[]`                         |  |
+| jmx.port                   | int    | `8686`                       |  |
+| jvm.opts                   | string | `""`                         |  |
+| kafka.brokerConnect        | string | `"localhost:9092"`           |  |
+| kafka.keystore             | string | `""`                         |  |
+| kafka.keystoreFile         | string | `"kafka.keystore.jks"`       |  |
+| kafka.properties           | string | `""`                         |  |
+| kafka.propertiesFile       | string | `"kafka.properties"`         |  |
+| kafka.truststore           | string | `""`                         |  |
+| kafka.truststoreFile       | string | `"kafka.truststore.jks"`     |  |
+| mountProtoDesc.enabled     | bool   | `false`                      |  |
+| mountProtoDesc.hostPath    | string | `nil`                        |  |
+| nameOverride               | string | `""`                         |  |
+| nodeSelector               | object | `{}`                         |  |
+| podAnnotations             | object | `{}`                         |  |
+| replicaCount               | int    | `1`                          |  |
+| resources.requests.cpu     | string | `"1m"`                       |  |
+| resources.requests.memory  | string | `"128Mi"`                    |  |
+| server.port                | int    | `9000`                       |  |
+| server.servlet.contextPath | string | `"/"`                        |  |
+| service.annotations        | object | `{}`                         |  |
+| service.nodePort           | int    | `30900`                      |  |
+| service.port               | int    | `9000`                       |  |
+| service.type               | string | `"NodePort"`                 |  |
+| tolerations                | list   | `[]`                         |  |
 
 ----------------------------------------------
 Autogenerated from chart metadata using [helm-docs v1.6.0](https://github.com/norwoodj/helm-docs/releases/v1.6.0)

@@ -36,5 +36,7 @@ spec:
                 name: {{ $fullName }}
                 port:
                   number: 80
+            path: {{ .Values.ingress.path }}}}
+            pathType: {{ .Values.ingress.pathType }}  }}
   {{- end }}
 {{- end }}

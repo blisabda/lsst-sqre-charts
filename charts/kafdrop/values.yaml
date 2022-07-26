@@ -39,8 +39,10 @@ service:
 
 ingress:
   enabled: false
+  ingressClassName: ""
   annotations: {}
   path: /
+  pathType: Prefix
   hosts: []
   tls: []
 
