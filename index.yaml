@@ -3206,6 +3206,19 @@ entries:
   kafdrop:
   - apiVersion: v1
     appVersion: 3.30.0
+    created: "2022-07-26T05:44:23.660297243Z"
+    description: A Helm chart for Kafdrop
+    digest: 55bec8784ce0a99f497faf4c95af2cbbeb41c9c182055c91566a85764ec9b975
+    maintainers:
+    - email: afausti@lsst.org
+      name: afausti
+      url: https://afausti.github.io/
+    name: kafdrop
+    urls:
+    - https://github.com/blisabda/lsst-sqre-charts/releases/download/kafdrop-0.1.6/kafdrop-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v1
+    appVersion: 3.30.0
     created: "2022-07-26T05:16:27.799914477Z"
     description: A Helm chart for Kafdrop
     digest: 2d2c2e83fdc17947443098935534a7e0eb12eccfb0db62ec51bf99d1a25f8a2b
@@ -8461,4 +8474,4 @@ entries:
     urls:
     - https://github.com/lsst-sqre/charts/releases/download/vo-cutouts-0.1.0/vo-cutouts-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-26T05:16:27.8027578Z"
+generated: "2022-07-26T05:44:23.662655147Z"
